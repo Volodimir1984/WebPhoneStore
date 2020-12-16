@@ -1,0 +1,8 @@
+﻿header{
+  background-color: cornflowerblue;
+  max-height: 100px;
+}
+
+ul{
+  z-index: 10;
+}
