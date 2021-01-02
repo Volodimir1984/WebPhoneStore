@@ -2,8 +2,8 @@
 
 namespace WebPhoneStore.Models.ModelsDTO.ProductsDTO
 {
-    public class CategoriesDto
+    public class ProductsDTO
     {
-        public List<CategoryDto> Categories { get; set; }
+        public List<ProductDTO> Products { get; set; }
     }
 }

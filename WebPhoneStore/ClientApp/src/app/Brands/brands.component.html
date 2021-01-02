@@ -1,0 +1,9 @@
+﻿<div (mouseenter)="setHidden()" (mouseleave)="setHiddenNot()">
+  <a class="nav-link" href="products{{category.slug}}">{{category.name}} ></a>
+  <ul class="nav flex-column" [ngClass]="{'list-invisible': isHidden}">
+    <li class="nav-item" *ngFor="let brand of brands">
+      <a class="nav-link" href="products/{{category.slug}}/{{brand.slug}}">{{brand.name}}</a>
+    </li>
+  </ul>
+</div>
+
