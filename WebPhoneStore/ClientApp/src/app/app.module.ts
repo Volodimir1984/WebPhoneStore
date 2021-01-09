@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {HeaderComponent} from "./header/header.component";
 import {BrandsComponent} from "./Brands/brands.component";
+import {ProductsComponent} from "./products/products.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    BrandsComponent
+    BrandsComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -22,6 +24,7 @@ import {BrandsComponent} from "./Brands/brands.component";
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      {path: 'products/:category', component: ProductsComponent},
     ])
   ],
   providers: [],

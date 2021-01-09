@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="ComputerWorld@localhost" uuid="5db29526-566f-4db9-8f22-0c99b1f93960">
-      <database-info product="PostgreSQL" version="13.0" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="13.0" exact-driver-version="42.2">
+    <data-source name="ComputerWorld@localhost" uuid="7684fb22-072b-42e6-a24d-1d772d255a0e">
+      <database-info product="PostgreSQL" version="13.1" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="13.1" exact-driver-version="42.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -10,8 +10,11 @@
       <user-name>Volodymyr</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="ComputerWorld" />
           </node>
         </introspection-scope>
       </schema-mapping>
