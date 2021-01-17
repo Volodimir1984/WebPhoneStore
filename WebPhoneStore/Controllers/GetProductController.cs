@@ -37,5 +37,26 @@ namespace WebPhoneStore.Controllers
 
             return new ProductsDTO();
         }
+
+        [HttpGet("{category}/{brand}")]
+        public async Task<ActionResult<ProductsDTO>> Get(string category, string brand)
+        {
+            if (_db.Categories.Any(i => i.Slug.Contains(category)) && _db.Brands.Any(i => i.Slug.Contains(brand)))
+            {
+                return new ProductsDTO
+                {
+                    Products = await _db.Products.AsNoTracking().Include(i => i.Category)
+                        .ThenInclude(i => i.Brands)
+                        .Where(i => i.Category.Slug.Contains(category) && i.Brand.Slug.Contains(brand))
+                        .Select(i => new ProductDTO
+                        {
+                            Name = i.Name,
+                            Slug = i.Slug,
+                        }).ToListAsync(),
+                };
+            }
+
+            return new ProductsDTO();
+        }
     }
 }

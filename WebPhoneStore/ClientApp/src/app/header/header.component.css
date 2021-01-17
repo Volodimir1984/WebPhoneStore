@@ -6,3 +6,7 @@
 ul{
   z-index: 10;
 }
+
+h1{
+  cursor: pointer;
+}

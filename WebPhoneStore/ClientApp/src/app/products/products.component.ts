@@ -1,24 +1,33 @@
-﻿import  {Component, OnInit} from "@angular/core";
+﻿import  {Component} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
-import {switchMap} from "rxjs/operators";
-import {Products} from "./Products";
+import {HttpService} from "../http.service";
+import {Product} from "./Product";
 
 
 @Component({
   selector: 'app-products',
-  templateUrl: 'products.component.html'
+  templateUrl: 'products.component.html',
+  providers: [HttpService]
 })
 
-export class ProductsComponent implements OnInit{
+export class ProductsComponent{
 
-  products: Products[];
-  category: string;
+  products: Product[];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private http: HttpService) {
+    this.route.params.subscribe(
+      params => {
+        let category: string = params['category'];
+        let brand: string = params['brand'];
+        this.getProducts(category, brand);
+      });
   }
 
-  ngOnInit() {
-    this.route.paramMap.pipe(switchMap(param => param.getAll('category')))
-      .subscribe( i => this.products = i['products'])
+  getProducts(category: string, brand: string): void{
+
+    if (brand != null && brand != "")
+      this.http.getData(`products/${category}/${brand}`).subscribe(i => this.products = i['products']);
+    else
+       this.http.getData(`products/${category}`).subscribe(i => this.products = i['products']);
   }
 }

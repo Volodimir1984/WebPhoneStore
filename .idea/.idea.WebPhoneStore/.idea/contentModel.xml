@@ -185,7 +185,6 @@
                 <e p="Product.ts" t="Include" />
                 <e p="products.component.html" t="Include" />
                 <e p="products.component.ts" t="Include" />
-                <e p="Products.ts" t="Include" />
               </e>
             </e>
             <e p="assets" t="Include">

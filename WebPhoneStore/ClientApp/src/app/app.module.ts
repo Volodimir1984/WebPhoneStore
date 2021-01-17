@@ -23,8 +23,9 @@ import {ProductsComponent} from "./products/products.component";
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
+      { path: 'products/:category/:brand', component: ProductsComponent },
+      { path: 'products/:category', component: ProductsComponent },
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      {path: 'products/:category', component: ProductsComponent},
     ])
   ],
   providers: [],
