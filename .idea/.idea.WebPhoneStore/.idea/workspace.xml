@@ -7,15 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8733386c-a321-4311-8b7b-a6e3d85b2580" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebPhoneStore/ClientApp/src/app/products/ProductService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebPhoneStore/.idea/dataSources/5db29526-566f-4db9-8f22-0c99b1f93960.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebPhoneStore/.idea/dataSources/5db29526-566f-4db9-8f22-0c99b1f93960/storage_v2/_src_/database/ComputerWorld.FxV-gw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebPhoneStore/.idea/dataSources/5db29526-566f-4db9-8f22-0c99b1f93960/storage_v2/_src_/database/ComputerWorld.FxV-gw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebPhoneStore/.idea/dataSources/5db29526-566f-4db9-8f22-0c99b1f93960/storage_v2/_src_/database/ComputerWorld.FxV-gw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebPhoneStore/.idea/dataSources/5db29526-566f-4db9-8f22-0c99b1f93960/storage_v2/_src_/database/ComputerWorld.FxV-gw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebPhoneStore/ClientApp/src/app/products/Products.ts" beforeDir="false" />
-    </list>
+    <list default="true" id="8733386c-a321-4311-8b7b-a6e3d85b2580" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +158,7 @@
       <workItem from="1610271294786" duration="3017000" />
       <workItem from="1610278140749" duration="1558000" />
       <workItem from="1610302966934" duration="3233000" />
-      <workItem from="1610872239225" duration="9542000" />
+      <workItem from="1610872239225" duration="9905000" />
     </task>
     <task id="LOCAL-00001" summary="Add controller for get products">
       <created>1609623272851</created>
@@ -189,7 +181,35 @@
       <option name="project" value="LOCAL" />
       <updated>1610885064236</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add products components">
+      <created>1610885271391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610885271391</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add products components">
+      <created>1610885320056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610885320056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add products components">
+      <created>1610885355876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610885355876</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add products components">
+      <created>1610885487138</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610885487138</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
