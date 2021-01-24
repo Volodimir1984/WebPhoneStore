@@ -7,6 +7,7 @@ import {Product} from "./Product";
 @Component({
   selector: 'app-products',
   templateUrl: 'products.component.html',
+  styleUrls: ['products.component.css'],
   providers: [HttpService]
 })
 
@@ -30,4 +31,5 @@ export class ProductsComponent{
     else
        this.http.getData(`products/${category}`).subscribe(i => this.products = i['products']);
   }
+
 }

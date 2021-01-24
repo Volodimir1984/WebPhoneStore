@@ -1,0 +1,12 @@
+﻿<ul (mouseover)="isVisible()" (mouseout)="isVisible()">
+  <li *ngIf="product.image == null">
+    <img  src="/no_photo.png" alt="{{product.name}}">
+  </li>
+  <li *ngIf="product.image != null">
+    <img  src="/Images/{{product.image}}" alt="{{product.name}}">
+  </li>
+  <li class="h6">{{product.name}}</li>
+  <li class="h3">{{product.price}} &#8372;</li>
+  <li class="small" [class.visible]="visibleDescription" [innerHTML]="product.shortDescription" ></li>
+</ul>
+

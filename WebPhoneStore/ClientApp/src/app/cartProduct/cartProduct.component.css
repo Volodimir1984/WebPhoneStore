@@ -1,0 +1,11 @@
+﻿ul {
+  list-style-type: none;
+}
+
+img{
+  width: 80%;
+}
+
+.visible{
+  display: none;
+}

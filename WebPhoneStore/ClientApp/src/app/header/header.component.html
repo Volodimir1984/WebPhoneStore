@@ -1,11 +1,11 @@
 ﻿<header>
   <div class="ml-5">
-    <button class="btn btn-primary ml-3 mb-2">Категорії товарів</button>
+    <button class="btn btn-primary ml-3 mb-2" (click)="showLinks()">Категорії товарів</button>
     <h1 class="text-white h1 d-inline ml-5" routerLink="/">Computer World</h1>
   </div>
 </header>
 
-<ul class="nav flex-column ml-2 pt-3 d-inline-block">
+<ul class="nav flex-column ml-2 pt-3 d-inline-block" [class.invisible]="isVisible()">
   <li class="nav-item" *ngFor="let category of categories">
     <app-brands [category]="category" [brands]="category.brands"></app-brands>
   </li>

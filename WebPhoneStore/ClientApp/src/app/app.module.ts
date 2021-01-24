@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import {HeaderComponent} from "./header/header.component";
 import {BrandsComponent} from "./Brands/brands.component";
 import {ProductsComponent} from "./products/products.component";
+import {CartProductComponent} from "./cartProduct/cartProduct.component";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {ProductsComponent} from "./products/products.component";
     HeaderComponent,
     BrandsComponent,
     ProductsComponent,
+    CartProductComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

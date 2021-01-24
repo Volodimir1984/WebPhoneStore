@@ -3,8 +3,6 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Volodymyr\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Volodymyr\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_WebPhoneStore.931211991.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Volodymyr\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\Volodymyr\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
     <e p="D:\MyProject\WebPhoneStore" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="WebPhoneStore" t="IncludeRecursive">
@@ -169,6 +167,11 @@
                 <e p="brands.component.html" t="Include" />
                 <e p="brands.component.ts" t="Include" />
               </e>
+              <e p="cartProduct" t="Include">
+                <e p="cartProduct.component.css" t="Include" />
+                <e p="cartProduct.component.html" t="Include" />
+                <e p="cartProduct.component.ts" t="Include" />
+              </e>
               <e p="header" t="Include">
                 <e p="Brand.ts" t="Include" />
                 <e p="Category.ts" t="Include" />
@@ -183,6 +186,7 @@
               <e p="http.service.ts" t="Include" />
               <e p="products" t="Include">
                 <e p="Product.ts" t="Include" />
+                <e p="products.component.css" t="Include" />
                 <e p="products.component.html" t="Include" />
                 <e p="products.component.ts" t="Include" />
               </e>
@@ -4195,6 +4199,7 @@
             <e p="xiaomi-redmi-note-9s-6-128gb-grey-d3.o.jpg" t="Include" />
             <e p="xiaomi-redmi-note-9s-6-128gb-grey.o.jpg" t="Include" />
           </e>
+          <e p="no_photo.png" t="Include" />
         </e>
       </e>
       <e p="WebPhoneStore.sln" t="IncludeFlat" />

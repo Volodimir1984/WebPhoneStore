@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +32,9 @@ namespace WebPhoneStore.Controllers
                         {
                             Name = i.Name,
                             Slug = i.Slug,
+                            Image = i.Images.FirstOrDefault().Slug,
+                            Price = i.Price,
+                            ShortDescription = i.ShortDescription,
                         }).ToListAsync(),
                 };
             }
@@ -52,6 +56,9 @@ namespace WebPhoneStore.Controllers
                         {
                             Name = i.Name,
                             Slug = i.Slug,
+                            Image = i.Images.FirstOrDefault().Slug,
+                            Price = i.Price,
+                            ShortDescription = i.ShortDescription,
                         }).ToListAsync(),
                 };
             }

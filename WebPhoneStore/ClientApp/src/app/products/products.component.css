@@ -1,0 +1,9 @@
+﻿.productList{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.productList ul{
+  list-style-type: none;
+}
+
